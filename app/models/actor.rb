@@ -8,10 +8,8 @@ class Actor < ActiveRecord::Base
   
   def list_shows
     characters.map do |name|
-      "#{character.name} - #{ "
+      "#{character.name} - #{character.show.name}"
     end 
   end
-  
-  #{character_name} - #{show_name}
   
 end
